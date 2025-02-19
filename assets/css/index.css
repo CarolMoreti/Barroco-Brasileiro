@@ -1,0 +1,60 @@
+
+.hero{
+    background-image: url("./background.png");
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 85vh;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+.title h1{
+    font-family: "MedievalSharp", serif;
+    font-size: 60px;
+    color: #FDE3BE;
+}
+a{
+    text-decoration:none;
+    color:white;
+    font-size:50px;
+}
+.p:hover{
+    opacity: 0.8;
+}
+.button-brown{
+    border-radius: 50%;
+    background-color: #DBAF7C;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+}
+.button-brown:hover{
+    background-color:#af8b62;
+}
+.info{
+    display:none;
+}
+.container{
+    margin: 100px 50px;
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
