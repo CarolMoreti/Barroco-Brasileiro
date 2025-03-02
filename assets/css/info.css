@@ -6,7 +6,7 @@
     height: 50px;
     background-color: #eee9;
     border: 1px solid #eee9;
-    font-size: x-large;
+    font-size: 40px;
     font-family: monospace;
     cursor: pointer;
     z-index: 4;
@@ -16,9 +16,11 @@ a{
     text-decoration: none;
 }
 #prev{
+    align-self: center;
     left: 30px;
 }
 #next{
+    align-self: center;
     right: 30px;
 }
 .autores{
@@ -29,4 +31,64 @@ a{
 }
 .fundo{
     background-image: url("./_5m2__papel_de_parede_barroco_classico_pp282_1_rolo_de_5m2_1567151641_70fc_600x600\ 1.png");
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 150px;
+}
+.info{
+    display: none;
+    flex-direction: column;
+    background-color:#FDE3BE;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 60px;
+    transition: opacity 1s ease, max-height 1s ease
+}
+.campo .container{
+    display: flex;
+    flex-direction: column;
+    background-color:#FDE3BE;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 60px;
+}
+.campo{
+    position: fixed;
+    top:100px;
+    width: 39vw;
+    z-index: 3;
+    left: -50%;
+    transition: 1.5s;
+}
+.campo p{
+    font-size: 30px;
+}
+p{
+    font-size: 35px;
+}
+li{
+    font-size: 26px;
+    margin: 10px 0 10px 30px;
+    list-style-type: none;
+}
+.link{
+    font-size: 35px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 50px;
+    font-family:"MedievalSharp", serif;
+    background-color: #a37534;
+    border-radius: 30px;
+    padding: 10px 15px;
+    color:#fff;
+    z-index: 3;
+}
+.link:hover{
+    opacity: 0.8;
 }

@@ -10,7 +10,7 @@
 }
 p{
     font-family: "Nova Oval", serif;
-    font-size: 20px;
+    font-size: 25px;
 }
 .names{
     display: flex;
@@ -31,14 +31,4 @@ p{
 .direita{
     padding-right:150px ;
     gap: 150px;
-}
-.voltar{
-    font-family: "Jacquard 24", serif;
-    text-decoration: none;
-    color: white;
-    font-size: 40px;
-    margin-left: 45vw;
-}
-.voltar:hover, .names a:hover{
-    opacity: 0.8;
 }

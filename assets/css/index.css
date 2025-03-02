@@ -50,11 +50,40 @@ a{
     display:none;
 }
 .container{
-    margin: 100px 50px;
+    padding: 100px 100px;
+}
+.info{
+    display: none;
+    background-color: #DBAF7C;
+    transition: opacity 0.4s ease, max-height 0.4s ease;
 }
 .info-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+}
+.bottom-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 15vw;
+    transition: transform 0.4s ease;
+}
+h1{
+    align-self: center;
+    font-size: 60px;
+    font-family:"MedievalSharp", serif ;
+    margin-bottom: 50px;
+}
+p{
+    font-size: 51px;
+    width: 50vw;
+}
+.right{
+    border-radius: 40px;
+    width: 20vw;
+    border: 2px solid transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
