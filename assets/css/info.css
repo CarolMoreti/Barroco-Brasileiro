@@ -31,6 +31,9 @@
     padding: 25px;
     transition: opacity 1s ease, max-height 1s ease;
 }
+.infor{
+    display: none;
+}
 .info p{
     font-size: 20px;
 }
@@ -48,7 +51,7 @@
     border: 2px solid transparent;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     padding: 60px;
-    width: 600px;
+    width: 550px;
 }
 .campo p{
     font-size: 15px;

@@ -4,7 +4,6 @@
     padding:0;
     box-sizing: border-box;
     font-family: "Nova Oval";
-    overflow: hidden;
 }
 .voltar{
     position: fixed;
@@ -20,4 +19,7 @@
 }
 .voltar:hover, .names a:hover{
     opacity: 0.8;
+}
+.item{
+    overflow: hidden;
 }

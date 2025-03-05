@@ -32,7 +32,7 @@
        
             <a href="#" class="link" id="botao">Obras</a>
     </div>
-    <div class="campo" id="quadro">
+    <div class="campo" id="quadro" style="width: 1100px;">
         <div class="container">
             <div class="item ativo">
                 <h1>Temas abordados</h1>
@@ -67,12 +67,12 @@
     botao.addEventListener('click', (event) => {
         event.preventDefault();
        
-        if (campo.style.left === "30%") {
-            campo.style.left = "-1500%"; // Esconde a div
+        if (campo.style.left === "1%") {
+            campo.style.left = "-100%"; // Esconde a div
             botao.innerText = "Obra";
             botao.style.backgroundColor = "#d5d5d5";
         } else {
-            campo.style.left = "30%"; // Mostra a div
+            campo.style.left = "1%"; // Mostra a div
             botao.innerText = "Menos -";
             botao.style.backgroundColor = "#d1d1d1";
         }

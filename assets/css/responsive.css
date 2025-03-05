@@ -1,114 +1,111 @@
-@media (max-width: 900px) {
-    .container {
-        flex-direction: column;
-        padding: 50px;
+@media (width<600px){
+    .hero{
+        background-image: url("./responsive.png");
     }
-    .fundo{
-        height: 100%;
+    .hero .p{
+        color:#000 ;
     }
-    .campo {
-        width: 60vw;
-        top: 50px;
+    .resumo .container{
+        padding: 30px;
     }
-    .autor-img {
-        width: 400px;
+    .resumo .right{
+        display: none;
     }
-    .names {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 70vh;
+    .resumo p{
+        width: 100%;
     }
-    .direita, .esquerda {
-        flex-direction: column;
-        gap: 30px;
-        padding: 0;
+    .bottom-div{
+        gap: 0;
     }
-    .voltar {
-        font-size: 50px;
-        margin-left: 40vw;
-    }
-    .autor h1, .middle-div h2 {
-        font-size: 60px;
-    }
-    .middle-div li li {
-        font-size: 30px;
-        margin-left: 100px;
-    }
-    .resumo p {
-        font-size: 40px;
-        width: 60vw;
-    }
-    .quadro{
-        width: 250px;
-        height: 250px;
-    }
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 20px;
-    }
-    .campo {
-        width: 80vw;
-    }
-    .autor-img {
-        width: 250px;
-    }
-    .names {
-        padding-top: 50vh;
-    }
-    .voltar {
-        font-size: 40px;
-        margin-left: 30vw;
-    }
-    .autor h1, .middle-div h2 {
-        font-size: 40px;
-    }
-    .middle-div li li {
-        font-size: 25px;
-        margin-left: 50px;
-    }
-    .resumo p {
-        font-size: 30px;
-        width: 70vw;
-    }
-    #prev, #next {
-        width: 50px;
-        height: 50px;
-        font-size: large;
-    }
-}
-@media (max-width: 300px) {
-    .container {
-        padding: 10px;
-    }
-    .campo {
-        width: 90vw;
-    }
-    .autor-img {
-        width: 200px;
-    }
-    .names {
-        padding-top: 40vh;
-    }
-    .voltar {
-        font-size: 30px;
-        margin-left: 20vw;
-    }
-    .autor h1, .middle-div h2 {
+    .voltar{
+        margin-left: 0;
+        left: 40vw;
         font-size: 30px;
     }
-    .middle-div li li {
-        font-size: 20px;
-        margin-left: 30px;
-    }
-    .resumo p {
-        font-size: 25px;
-        width: 80vw;
-    }
-    #prev, #next {
+    #prev, #next{
         width: 40px;
         height: 40px;
-        font-size: medium;
+        font-size: 15px;
+        position: fixed;
+    }
+    .autores{
+        background-image: url(./papel.jpg);
+        background-size: 450px;
+        height: auto;
+    }
+    .fundo{
+        height: auto;
+    }
+    .names{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .direita, .esquerda{
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .antonio{
+        margin-left: 0;
+    }
+    .moldura{
+        display: flex;
+    }
+    .scroll{
+        overflow-x: scroll;
+        height: auto;
+    }
+    .names a{
+        text-align: center;
+    }
+    .names a p{
+        background-color: #B86152;
+        border: none;
+        border-radius: 20px;
+    }
+    .names a:hover{
+        opacity: 1;
+    }
+
+    .quadro-foto{
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    .item .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .quadro a{
+        pointer-events: none;
+    }
+    .infor{
+        display: flex;
+        margin: 10px;
+        width: 250px;
+        background-color: #FDE3BE;
+        border-radius: 30px;
+        border: 2px solid transparent;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    .infor .container{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+    }
+    .infor p{
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    .infor li{
+        font-size: 17px;
+    }.histo p{
+        font-weight: normal;
+        font-size: 17px;
+    }.histo h1{
+        font-size: 25px;
+        font-family: "Jacquard 24", sans-serif;
+        font-weight: 300;
     }
 }
