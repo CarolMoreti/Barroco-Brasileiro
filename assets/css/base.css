@@ -3,13 +3,19 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: "Nova Oval";
 }
 .voltar{
+    position: fixed;
     font-family: "Jacquard 24", serif;
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 60px;
     margin-left: 45vw;
+}
+.autor .voltar{
+    position: relative;
+    color: black;
 }
 .voltar:hover, .names a:hover{
     opacity: 0.8;

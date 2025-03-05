@@ -1,7 +1,7 @@
 let seta = document.getElementById('arrow');
 let info = document.getElementById('info');
 
-seta.addEventListener('click', () => {
+seta.addEventListener('click', (event) => {
     event.preventDefault();
     if (window.getComputedStyle(info).display === "none") {
         info.style.display = "flex"; // Mostra a div se estiver oculta

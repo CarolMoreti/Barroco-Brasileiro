@@ -5,8 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frei Vicente do Salvador</title>
     <link rel="stylesheet" href="./assets/autores.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body class="autor">
-    
+    <a href="info.html" class="voltar">Voltar</a>
+    <div class="container">
+        <div class="top-div">
+            <div class="left-top">
+                <img src="./assets/img/Frei_Vicente_do_Salvador-removebg-preview 1.png" alt="" class="autor-img">
+            </div>
+            <div class="right-top">
+                <h1>Frei Vicente do Salvador (1564–1636)</h1>
+                <p>Foi um frade franciscano e historiador considerado o primeiro historiador do Brasil. Ele nasceu na Bahia e dedicou sua vida à Igreja e à escrita, sendo autor da obra História do Brasil, escrita entre 1627 e 1630.
+                <br><br><br>
+                Frei Vicente nasceu em Salvador, Bahia, em 1564. Ingressou na Ordem Franciscana e estudou no Colégio de Santo Antão, em Lisboa. Retornou ao Brasil e passou a atuar como pregador e missionário. Sua experiência direta com a realidade colonial brasileira influenciou sua visão sobre a sociedade, os indígenas e a administração portuguesa.
+                <br><br><br>
+                Sua principal obra, História do Brasil, é considerada um dos primeiros registros históricos sobre a colônia. Apesar de não ter sido publicada em sua época (foi descoberta no século XIX), ela fornece informações valiosas sobre o Brasil colonial.
+                </p>
+            </div>
+        </div>
+        <div class="middle-div">
+            <h1>Legado</h1>
+            <p>Embora sua obra tenha sido ignorada por séculos, Frei Vicente de Salvador é hoje reconhecido como o primeiro historiador do Brasil. Sua escrita não era apenas descritiva, mas também crítica, mostrando preocupações com o futuro da colônia.</p>
+        </div>
+       
+            <a href="#" class="link" id="botao">Obras</a>
+    </div>
+    <div class="campo" id="quadro">
+        <div class="container">
+            <div class="item ativo">
+                <h1>Temas abordados</h1>
+                <ul>
+                    <li>Colonização e exploração – Ele critica a falta de interesse dos portugueses em povoar e desenvolver a colônia.</li>
+                    <li>Indígenas – Fala sobre os povos nativos, seus costumes e a relação com os colonizadores.</li>
+                    <li>Religião e evangelização – Destaca a importância dos missionários na catequização dos indígenas.</li>
+                    <li>Economia e política – Analisa a estrutura econômica baseada no açúcar e a dependência de Portugal.</li>
+                </ul>
+            </div>
+           
+            <div class="item">
+                <h1>Trechos (1/2)</h1>
+                <p>"Porque nesta terra, ou não há dinheiro, ou, se há, não é dos moradores, senão dos passageiros."</p>
+            </div>
+            <div class="item">
+                <h1>Trechos (2/2)</h1>
+                <p>"E não se cuida em povoa-la (a terra), senão em a tirar e gastar e consumir e destruir, que não é isso colonizá-la, senão assolá-la; e enquanto não houver moradores que nela se queiram assentar e fazer vida, não passará de ser oficina de feitores e escravos, e de alguns homens livres que cá andam mercadejando e correndo a costa."</p>
+            </div>
+            <div class="seta">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+        let botao = document.getElementById('botao');
+    let campo = document.getElementById('quadro');
+
+
+    botao.addEventListener('click', (event) => {
+        event.preventDefault();
+       
+        if (campo.style.left === "30%") {
+            campo.style.left = "-50%"; // Esconde a div
+            botao.innerText = "Obra";
+            botao.style.backgroundColor = "#d5d5d5";
+        } else {
+            campo.style.left = "30%"; // Mostra a div
+            botao.innerText = "Menos -";
+            botao.style.backgroundColor = "#d1d1d1";
+        }
+    });
+
+
+    let list = document.querySelectorAll('.item')
+let next = document.getElementById('next')
+let prev = document.getElementById('prev')
+
+
+let count = list.length
+let active = 0
+
+
+next.onclick = () =>{
+    let activeold = document.querySelector('.ativo')
+    activeold.classList.remove('ativo')
+    active = active >=count -1 ? 0 : active +1
+    list[active].classList.add('ativo')
+}
+
+
+prev.onclick = () =>{
+    let activeold = document.querySelector('.ativo')
+    activeold.classList.remove('ativo')
+    active = active <= 0 ? count -1 : active -1
+    list[active].classList.add('ativo')
+};
+console.log(count)
+</script>
 </html>

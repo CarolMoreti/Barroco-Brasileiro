@@ -24,7 +24,7 @@
     font-size: 60px;
     color: #FDE3BE;
 }
-a{
+.hero a{
     text-decoration:none;
     color:white;
     font-size:50px;
@@ -46,18 +46,18 @@ a{
 .button-brown:hover{
     background-color:#af8b62;
 }
-.info{
+.resumo{
     display:none;
 }
 .container{
     padding: 100px 100px;
 }
-.info{
+.resumo{
     display: none;
     background-color: #DBAF7C;
     transition: opacity 0.4s ease, max-height 0.4s ease;
 }
-.info-container{
+.resumo-container{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -71,17 +71,17 @@ a{
     gap: 15vw;
     transition: transform 0.4s ease;
 }
-h1{
+.resumo h1{
     align-self: center;
     font-size: 60px;
     font-family:"MedievalSharp", serif ;
     margin-bottom: 50px;
 }
-p{
+.resumo p{
     font-size: 51px;
     width: 50vw;
 }
-.right{
+.resumo .right{
     border-radius: 40px;
     width: 20vw;
     border: 2px solid transparent;

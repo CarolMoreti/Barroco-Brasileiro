@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barroco Brasileiro</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/info.css">
+    <link rel="stylesheet" href="./assets/autores.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <a href="index.html" class="voltar">Voltar</a>
+    <div class="item autores ativo">
+        <div class="names">
+            <div class="esquerda">
+                <a href="./Frei.html"><p>Frei Vicente do Salvador</p></a>
+                <a href="./Gregorio.html"><p>Gregório de Matos</p></a>
+            </div>
+            <a href="./Antonio.html"><p>Pe. Antônio Vieira</p></a>
+            <div class="direita">
+                <a href="./Bento.html"><p>Bento Teixeira</p></a>
+                <a href="./Botelho.html"><p>Botelho de Oliveira</p></a> 
+            </div>
+        </div>
+    </div>
+    <div class="item fundo">
+        <div class="container">
+            <div class="quadro">
+                <a href="#" id="quadro">
+                    <img src="./assets/img/Group 5 (1).png" alt="" class="quadro-foto">
+                </a>
+            </div>
+            <div class="info" id="info">
+                <p> Cultismo (Jogo de Palavras)</p>
+                <ul>
+                    <li>Uso de linguagem rebuscada, metáforas complexas e jogos de palavras para criar textos sofisticados e ornamentados.</li>
+                </ul>
+                <p>Conceptismo (Jogo de Ideias)</p>
+                <ul>
+                    <li>Argumentação lógica e raciocínio elaborado para persuadir o leitor, explorando paradoxos e contrastes.</li>
+                </ul>
+                <p>Dualismo e Contradição</p>
+                <ul>
+                    <li>Conflito entre o material e o espiritual, o corpo e a alma, o pecado e a salvação, refletindo a tensão entre valores renascentistas e religiosos.</li>
+                </ul>
+                <p>Teocentrismo e Religiosidade</p>
+                <ul>
+                    <li>Forte presença da fé cristã, com temas como culpa, pecado, redenção e o medo do castigo divino, influenciados pela Contrarreforma.
+                    </li>
+                </ul>
+                <p>Pessimismo e Efemeridade da Vida</p>
+                <ul>
+                    <li>Visão melancólica sobre a brevidade da existência humana, representada por temas como morte, sofrimento e fugacidade do tempo (carpe diem e memento mori).</li>
+                </ul>
+                <p>Exagero e Ornamentação</p>
+                <ul>
+                    <li>Uso de hipérboles, antíteses, paradoxos e metáforas extravagantes para dar intensidade e dramaticidade ao texto.</li>
+                </ul>
+                <p>Figura do Poeta como um Sofredor</p>
+                <ul>
+                    <li>O escritor barroco expressa angústia e sofrimento diante da dualidade da vida e da busca pela salvação.</li>
+                </ul>
+                <p>Temática Amorosa e Sensualidade</p>
+                <ul>
+                    <li>Conflito entre o amor terreno (desejo carnal) e o amor espiritual (puro e divino), muitas vezes simbolizado por mulheres idealizadas.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="item fundo">
+        <div class="container">
+            <div class="quadro">
+                <a href="#" id="quadro2">
+                    <img src="./assets/img/Group 5.png" alt="" class="quadro-foto">
+                </a>
+            </div>
+            <div class="info" id="info2">
+                <p>O Barroco brasileiro surgiu no final do século XVI e predominou até meados do século XVIII, sendo o primeiro grande estilo artístico e literário do Brasil colonial. Ele se desenvolveu em um contexto de forte influência da Igreja Católica e da Contrarreforma, refletindo a religiosidade, o dualismo e os contrastes típicos desse período.</p>
+                <a href="#" class="link" id="botao">Mais + </a>
+            </div>
+        </div>
+        <div class="campo" id="campo">
+            <div class="container">
+                <h1>Colonização e Cristianização</h1>
+                <p>O Brasil estava sob domínio português, e a Igreja Católica exercia grande influência, especialmente por meio das ordens religiosas (jesuítas, franciscanos, beneditinos e carmelitas), que usavam o Barroco para catequizar os indígenas e reforçar a fé dos colonos.</p> <br> <br>
+                <h1>Contrarreforma</h1>
+                <p>O Barroco era a estética da Contrarreforma, movimento da Igreja Católica que reagia à Reforma Protestante. Por isso, sua arte e literatura tinham um caráter didático e emocional, buscando atrair fiéis.</p> <br> <br>
+                <h1>Exploração do ouro</h1>
+                <p>No século XVIII, com a descoberta do ouro em Minas Gerais, o Barroco ganhou força, especialmente na arquitetura e na escultura, com destaque para artistas como Aleijadinho.</p>
+            </div>
+        </div>
+    </div>
+    <div class="seta">
+        <button id="prev"><</button>
+        <button id="next">></button>
+    </div>
+</body>
+<script>
+let quadro = document.getElementById('quadro');
+let info = document.getElementById('info');
+
+quadro.addEventListener('click', (event) => {
+    event.preventDefault();
+    if (window.getComputedStyle(info).display === "none") {
+        info.style.display = "flex"; // Mostra a div se estiver oculta
+    } else {
+        info.style.display = "none"; // Esconde a div se estiver visível
+    }
+});
+let quadro2 = document.getElementById('quadro2');
+let info2 = document.getElementById('info2');
+
+quadro2.addEventListener('click', (event) => {
+    event.preventDefault();
+    if (window.getComputedStyle(info2).display === "none") {
+        info2.style.display = "flex"; // Mostra a div se estiver oculta
+    } else {
+        info2.style.display = "none"; // Esconde a div se estiver visível
+    }
+});
+
+let botao = document.getElementById('botao')
+let campo = document.getElementById('campo')
+
+botao.addEventListener('click', (event) => {
+    event.preventDefault();
+    let leftValue = campo.style.left;
+    if (leftValue === "-50%" || leftValue === "") {
+        campo.style.left = "4%";
+        botao.innerText = "Menos -";
+        botao.style.backgroundColor ="#a56710"
+    } else {
+        campo.style.left = "-50%";
+        botao.innerText = "Mais +";
+        botao.style.backgroundColor ="#a37534"
+    }
+});
+
+
+let list = document.querySelectorAll('.item')
+let next = document.getElementById('next')
+let prev = document.getElementById('prev')
+
+
+let count = list.length
+let active = 0
+
+
+next.onclick = () =>{
+let activeold = document.querySelector('.ativo')
+activeold.classList.remove('ativo')
+active = active >=count -1 ? 0 : active +1
+list[active].classList.add('ativo')
+}
+
+
+prev.onclick = () =>{
+let activeold = document.querySelector('.ativo')
+activeold.classList.remove('ativo')
+active = active <= 0 ? count -1 : active -1
+list[active].classList.add('ativo')
+};
+console.log(count)
+</script>
+</html>

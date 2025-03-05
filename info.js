@@ -17,5 +17,4 @@ prev.onclick = () =>{
     activeold.classList.remove('ativo')
     active = active <= 0 ? count -1 : active -1
     list[active].classList.add('ativo')
-}
-console.log(count)
+};

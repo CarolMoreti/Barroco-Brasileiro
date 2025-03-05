@@ -5,8 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Botelho de Oliveira</title>
     <link rel="stylesheet" href="./assets/autores.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body class="autor">
-    
+    <a href="info.html" class="voltar">Voltar</a>
+    <div class="container">
+        <div class="top-div">
+            <div class="left-top">
+                <img src="./assets/img/botelhodeoliveira-removebg-preview.png" alt="" class="autor-img">
+            </div>
+            <div class="right-top">
+                <h1>Manuel Botelho de Oliveira (1636-1711)</h1>
+                <p>
+                    Manuel Botelho de Oliveira (1636-1711) foi um poeta brasileiro,
+um dos grandes representantes do estilo barroco que se desenvolveu na época
+do Brasil Colônia. Foi o primeiro brasileiro a publicar poesias em livro.
+<br><br><br>
+Manuel Botelho de Oliveira nasceu em Salvador, Bahia, em 1636. Foi
+contemporâneo de Gregório de Matos no curso de Direito em Coimbra, e
+durante esse período também se dedicou ao estudo do Latim, do Espanhol e
+do Italiano.
+<br><br><br>
+Ao retornar à Bahia, Manuel Botelho de Oliveira exerceu a advocacia. Em
+seguida, foi eleito vereador para a Câmara de Salvador e foi também capitão-
+mor de ordenanças dos distritos de Jacobina, Gameleira e Rio do Peixe.
+                </p>
+            </div>
+        </div>
+        <div class="middle-div">
+            <h1>Música do Parnaso</h1>
+            <p>Em 1705, com quase 70 anos, Manuel Botelho de
+                Oliveira, publicou em Lisboa o livro “Música do Parnaso”, cujos versos já
+                circulavam em cópias manuscritas, como ocorria com outros poetas
+                contemporâneos. Com a publicação, Manuel Botelho se tornou o primeiro
+                brasileiro a publicar poemas em livro.
+                <br><br><br>
+                Música do Parnaso é uma coletânea de poesias escritas em
+português, espanhol, italiano e latim. A obra é dedicada a D. Nuno Álvares
+Pereira de Melo, Duque de Cadaval. Contém, ainda, duas comédias em
+espanhol, língua em que compõe seus melhores versos: "Hay Amigo Para
+Amigo" e "Amor, Engaños y Celos".
+                <br><br><br>
+                Além dos diferentes idiomas, a coleção de Botelho apresenta as
+mais variadas formas de composição, entre elas, "A Ilha de Maré" – seu poema
+mais conhecido, que louva a terra e descreve os muitos frutos do Brasil e a
+inveja que esses fariam às cidades europeias. É uma espécie de crônica em
+verso, demonstrando a intensidade do sentimento nativista do poeta.
+            </p>
+        </div>
+       
+            <a href="#" class="link" id="botao">Obras</a>
+    </div>
+    <div class="campo" id="quadro">
+        <div class="container">
+            <div class="item ativo">
+                <h1>A Ilha de Maré (1/3)</h1>
+                <ul>
+                    <li>
+                        "Verdes campos, viçosos arvoredos, <br>
+Que rega o mar, de salinas correntezas, <br>
+E de mil aves cantam os segredos, <br>
+Que o som levam ao céu, às fortalezas."
+                    </li>
+                </ul>
+            </div>
+           
+            <div class="item">
+                <h1>A Ilha de Maré (2/3)</h1>
+                <ul>
+                    <li>
+                        "Oh! Ilha ditosa, oh! terra amada, <br>
+Que o céu e o mar te dão seu claro manto, <br>
+E em teu seio escondes ouro e prata, <br>
+Que a cobiça do mundo causa espanto."
+                    </li>
+                </ul>
+            </div>
+            <div class="item">
+                <h1>A Ilha de Maré (3/3)</h1>
+                <ul>
+                    <li>
+                        "As frutas se produzem copiosas, <br>
+E são tão deleitosas, <br>
+Que como junto ao mar o sítio é posto, <br>
+Lhes dá salgado o mar o sal do gosto."
+                    </li>
+                </ul>
+            </div>
+            <div class="seta">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+        let botao = document.getElementById('botao');
+    let campo = document.getElementById('quadro');
+
+
+    botao.addEventListener('click', (event) => {
+        event.preventDefault();
+       
+        if (campo.style.left === "30%") {
+            campo.style.left = "-50%"; // Esconde a div
+            botao.innerText = "Obra";
+            botao.style.backgroundColor = "#d5d5d5";
+        } else {
+            campo.style.left = "30%"; // Mostra a div
+            botao.innerText = "Menos -";
+            botao.style.backgroundColor = "#d1d1d1";
+        }
+    });
+
+
+    let list = document.querySelectorAll('.item')
+let next = document.getElementById('next')
+let prev = document.getElementById('prev')
+
+
+let count = list.length
+let active = 0
+
+
+next.onclick = () =>{
+    let activeold = document.querySelector('.ativo')
+    activeold.classList.remove('ativo')
+    active = active >=count -1 ? 0 : active +1
+    list[active].classList.add('ativo')
+}
+
+
+prev.onclick = () =>{
+    let activeold = document.querySelector('.ativo')
+    activeold.classList.remove('ativo')
+    active = active <= 0 ? count -1 : active -1
+    list[active].classList.add('ativo')
+};
+console.log(count)
+</script>
 </html>
