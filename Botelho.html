@@ -108,12 +108,12 @@ Lhes dá salgado o mar o sal do gosto."
     botao.addEventListener('click', (event) => {
         event.preventDefault();
        
-        if (campo.style.left === "30%") {
-            campo.style.left = "-1500%"; // Esconde a div
-            botao.innerText = "Obra";
+        if (campo.style.left > "0%") {
+            campo.style.left = "-250%"; // Esconde a div
+            botao.innerText = "Obras";
             botao.style.backgroundColor = "#d5d5d5";
         } else {
-            campo.style.left = "30%"; // Mostra a div
+            campo.style.left = "1%"; // Mostra a div
             botao.innerText = "Menos -";
             botao.style.backgroundColor = "#d1d1d1";
         }

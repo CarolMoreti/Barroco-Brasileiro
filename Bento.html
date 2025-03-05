@@ -60,6 +60,11 @@
                     <li>A "Prosopopeia" foi escrita em um período de transição na literatura brasileira, quando o país ainda era uma colônia de Portugal.
                     </li>
                     <li>A obra reflete o espírito da época, com sua exaltação dos feitos heroicos e a descrição idealizada da natureza exuberante do Brasil.</li>
+                </ul>
+            </div>
+            <div class="item mob">
+                <h1>Valor Histórico</h1>
+                <ul>
                     <li>Além de seu valor literário, a "Prosopopeia" também é importante como documento histórico, pois oferece um retrato da vida e dos costumes da época colonial.
                     </li>
                 </ul>
@@ -99,12 +104,12 @@
     botao.addEventListener('click', (event) => {
         event.preventDefault();
         
-        if (campo.style.left === "30%") {
-            campo.style.left = "-1500%"; // Esconde a div
-            botao.innerText = "Obra";
+        if (campo.style.left > "0%") {
+            campo.style.left = "-250%"; // Esconde a div
+            botao.innerText = "Obras";
             botao.style.backgroundColor = "#d5d5d5";
         } else {
-            campo.style.left = "30%"; // Mostra a div
+            campo.style.left = "1%"; // Mostra a div
             botao.innerText = "Menos -";
             botao.style.backgroundColor = "#d1d1d1";
         }

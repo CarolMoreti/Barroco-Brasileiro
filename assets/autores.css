@@ -134,7 +134,7 @@
     top:10px;
     width: 50%;
     z-index: 3;
-    left: -150%;
+    left: -250%;
     transition: 1.5s;
 }
 .campo li{
@@ -192,4 +192,7 @@ li{
 
 .item.ativo {
     display: block;
+}
+.item .mob{
+    display: none;
 }

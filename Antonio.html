@@ -97,7 +97,7 @@ colonial.
                     <ul>
                         <li>"Palavra de Deus, que é como o raio, que parte a nuvem, e não se ouve; e palavra de homens, que é como o trovão, que parte o ar, e se ouve."</li>
                         <li>"O pregar há de ser como o semear, e não como o ladrilhar. Ladrilham-se as palavras, para se verem; semeiam-se para nascerem."</li>
-                        <li>"Muitos pregadores semeiam palavras, e não semeiam obras; e por isso não colhem fruto."
+                        <li class="last">"Muitos pregadores semeiam palavras, e não semeiam obras; e por isso não colhem fruto."
                         </li>
                     </ul>
                 </div>
@@ -108,7 +108,7 @@ colonial.
                         <li>"Os outros ladrões roubam um homem, estes roubam cidades e reinos: os outros furtam debaixo do seu risco, estes sem temor, nem perigos: os outros se furtam, são enforcados, estes furtam e enforcam."</li>
                         <li>"O roubar pouco é culpa, o roubar muito é grandeza; o roubar com pouco poder faz os piratas, o roubar com muito, os Alexandres."   
                         </li>
-                        <li>"Se os ladrões de grande poder e mando se hão de condenar, quantos se hão de salvar? E se os que roubam pouco se hão de salvar, quantos se hão de condenar?"
+                        <li class="last">"Se os ladrões de grande poder e mando se hão de condenar, quantos se hão de salvar? E se os que roubam pouco se hão de salvar, quantos se hão de condenar?"
                         </li>
                     </ul>
                 </div>
@@ -148,15 +148,15 @@ colonial.
         botao.addEventListener('click', (event) => {
             event.preventDefault();
            
-            if (campo.style.left === "30%") {
-                campo.style.left = "-1500%"; // Esconde a div
-                botao.innerText = "Obra";
-                botao.style.backgroundColor = "#d5d5d5";
-            } else {
-                campo.style.left = "30%"; // Mostra a div
-                botao.innerText = "Menos -";
-                botao.style.backgroundColor = "#d1d1d1";
-            }
+            if (campo.style.left > "0%") {
+            campo.style.left = "-250%"; // Esconde a div
+            botao.innerText = "Obras";
+            botao.style.backgroundColor = "#d5d5d5";
+        } else {
+            campo.style.left = "1%"; // Mostra a div
+            botao.innerText = "Menos -";
+            botao.style.backgroundColor = "#d1d1d1";
+        }
         });
     
     

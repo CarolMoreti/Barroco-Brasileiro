@@ -35,15 +35,19 @@
     <div class="campo" id="quadro" style="width: 1100px;">
         <div class="container">
             <div class="item ativo">
-                <h1>Temas abordados</h1>
+                <h1>Temas abordados (1/2)</h1>
                 <ul>
                     <li>Colonização e exploração – Ele critica a falta de interesse dos portugueses em povoar e desenvolver a colônia.</li>
                     <li>Indígenas – Fala sobre os povos nativos, seus costumes e a relação com os colonizadores.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h1>Temas abordados (2/2)</h1>
+                <ul>
                     <li>Religião e evangelização – Destaca a importância dos missionários na catequização dos indígenas.</li>
                     <li>Economia e política – Analisa a estrutura econômica baseada no açúcar e a dependência de Portugal.</li>
                 </ul>
-            </div>
-           
+           </div>
             <div class="item">
                 <h1>Trechos (1/2)</h1>
                 <p>"Porque nesta terra, ou não há dinheiro, ou, se há, não é dos moradores, senão dos passageiros."</p>
@@ -67,8 +71,8 @@
     botao.addEventListener('click', (event) => {
         event.preventDefault();
        
-        if (campo.style.left === "1%") {
-            campo.style.left = "-100%"; // Esconde a div
+        if (campo.style.left > "0%") {
+            campo.style.left = "-250%"; // Esconde a div
             botao.innerText = "Obra";
             botao.style.backgroundColor = "#d5d5d5";
         } else {

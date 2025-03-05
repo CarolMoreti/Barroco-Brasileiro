@@ -87,3 +87,10 @@
     border: 2px solid transparent;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+footer{
+    font-size: 10px;
+    text-align: end;
+    padding: 5px;
+    color: rgb(156, 156, 156);
+    background-color: rgb(0, 0, 0);
+}

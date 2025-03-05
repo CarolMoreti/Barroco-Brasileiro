@@ -22,7 +22,7 @@
         left: 40vw;
         font-size: 30px;
     }
-    #prev, #next{
+    .scroll #prev, .scroll #next{
         width: 40px;
         height: 40px;
         font-size: 15px;
@@ -107,5 +107,34 @@
         font-size: 25px;
         font-family: "Jacquard 24", sans-serif;
         font-weight: 300;
+    }
+
+    .top-div{
+        flex-direction: column;
+    }
+    .right-top{
+        width: 100%;
+    }
+    .right-top h1{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .autor .container{
+        margin: 50px 40px;
+    }
+    .campo {
+        max-width: 100%;
+        width: 650px;
+        height: auto;
+    }
+    .campo .seta #prev, .campo .seta #next{
+        width: 40px;
+        height: 40px;
+    }
+    .last{
+        display: none;
+    }
+    .item .mob{
+        display: flex;
     }
 }
