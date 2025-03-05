@@ -19,6 +19,10 @@
 }
 .info{
     display: none;
+    position: fixed;
+    left:50%;
+    width: 500px;
+    text-align: end;
     flex-direction: column;
     background-color:#FDE3BE;
     border-radius: 30px;
@@ -28,10 +32,13 @@
     transition: opacity 1s ease, max-height 1s ease;
 }
 .info p{
-    font-size: 30px;
+    font-size: 20px;
 }
 .info li{
-    font-size: 25px;
+    font-size: 15px;
+}
+.campo li{
+    font-size: 15px;
 }
 .campo .container{
     display: flex;
@@ -41,31 +48,29 @@
     border: 2px solid transparent;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     padding: 60px;
-}
-.campo{
-    position: fixed;
-    top:100px;
-    width: 39vw;
-    z-index: 3;
-    left: -50%;
-    transition: 1.5s;
+    width: 600px;
 }
 .campo p{
-    font-size: 30px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.campo li{
+    font-size: 15px;
+    margin: 10px;
 }
 p{
-    font-size: 35px;
+    font-size: 15px;
 }
 li{
-    font-size: 26px;
+    font-size: 10px;
     margin: 10px 0 10px 30px;
     list-style-type: none;
 }
 .item .link{
-    font-size: 35px;
+    font-size: 15px;
     font-weight: 700;
     text-decoration: none;
-    margin-top: 50px;
+    margin-top: 20px;
     font-family:"MedievalSharp", serif;
     background-color: #a37534;
     border-radius: 30px;
@@ -75,4 +80,7 @@ li{
 }
 .link:hover{
     opacity: 0.8;
+}
+.quadro-foto{
+    width: 500px;
 }

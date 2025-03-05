@@ -19,18 +19,19 @@
     align-items: center;
     padding-top: 90vh;
 }
+.antonio{
+    margin-left: 100px;
+}
 .direita, .esquerda{
     display: flex;
     flex-direction: row;
-    gap: 50px;
-    padding-left:50px ;
+    gap: 10px ;
 }
 .esquerda{
     padding-left:50px ;
 }
 .direita{
-    padding-right:150px ;
-    gap: 150px;
+    padding-left:150px ;
 }
 .autor .container{
     display: flex;
@@ -44,45 +45,45 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 10vw;
+    gap: 10px;
 }
+
 .autor-img{
-    width: 500px;
-    margin-top: 60px;
+    width: 100%;
 }
 .right-top{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 40px;
+    width: 50%;
 }
 .autor h1{
     font-family: "Jacquard 24", serif;
     align-self: center;
-    font-size: 80px;
+    font-size: 40px;
     font-weight: 300;
     margin-top: 30px;
 } 
 .middle-div h1{
     display: flex;
     justify-content: center;
-    margin: 60px;
+    margin: 20px;
 }
 .middle-div h2{
     display: flex;
     justify-content: flex-start;
-    margin: 60px;
+    margin: 10px;
     font-family: "Jacquard 24", serif;
     align-self: center;
-    font-size: 80px;
+    font-size: 40px;
     font-weight: 300;
 }
 .middle-div li p{
-    margin-left:80px;
+    margin-left:25px;
 }
 .middle-div li li{
-    font-size: 40px;
+    font-size: 20px;
     margin-left: 150px;
     font-family: "MedievalSharp", sans-serif;
 }
@@ -90,7 +91,7 @@
     font-family: "Nova Oval", sans-serif;
 }
 .autor p{
-    font-size: 40px;
+    font-size: 20px;
 }
 .middle-div{
     margin-top: 70px;
@@ -121,18 +122,20 @@
 .item .campo{
     position: fixed;
     top:20%;
-    width: 39vw;
     z-index: 3;
-    left: -50%;
+    left: -1500%;
     transition: 1.5s;
 }
 .campo{
     position: fixed;
-    top:100px;
-    width: 39vw;
+    top:50px;
+    width: 50%;
     z-index: 3;
-    left: -50%;
+    left: -150%;
     transition: 1.5s;
+}
+.campo li{
+    font-size: 20px;
 }
 .link{
     font-size: 35px;

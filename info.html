@@ -17,7 +17,7 @@
                 <a href="./Frei.html"><p>Frei Vicente do Salvador</p></a>
                 <a href="./Gregorio.html"><p>Gregório de Matos</p></a>
             </div>
-            <a href="./Antonio.html"><p>Pe. Antônio Vieira</p></a>
+            <a href="./Antonio.html" class="antonio"><p>Pe. Antônio Vieira</p></a>
             <div class="direita">
                 <a href="./Bento.html"><p>Bento Teixeira</p></a>
                 <a href="./Botelho.html"><p>Botelho de Oliveira</p></a> 
@@ -31,7 +31,7 @@
                     <img src="./assets/img/Group 5 (1).png" alt="" class="quadro-foto">
                 </a>
             </div>
-            <div class="info" id="info">
+            <div class="info letra" id="info">
                 <p> Cultismo (Jogo de Palavras)</p>
                 <ul>
                     <li>Uso de linguagem rebuscada, metáforas complexas e jogos de palavras para criar textos sofisticados e ornamentados.</li>
@@ -49,7 +49,11 @@
                     <li>Forte presença da fé cristã, com temas como culpa, pecado, redenção e o medo do castigo divino, influenciados pela Contrarreforma.
                     </li>
                 </ul>
-                <p>Pessimismo e Efemeridade da Vida</p>
+                <a href="#" class="link" id="botao2">Mais + </a>
+            </div>
+            <div class="campo" id="campo2">
+                <div class="container">
+                    <p>Pessimismo e Efemeridade da Vida</p>
                 <ul>
                     <li>Visão melancólica sobre a brevidade da existência humana, representada por temas como morte, sofrimento e fugacidade do tempo (carpe diem e memento mori).</li>
                 </ul>
@@ -65,6 +69,7 @@
                 <ul>
                     <li>Conflito entre o amor terreno (desejo carnal) e o amor espiritual (puro e divino), muitas vezes simbolizado por mulheres idealizadas.</li>
                 </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -103,9 +108,9 @@ let info = document.getElementById('info');
 quadro.addEventListener('click', (event) => {
     event.preventDefault();
     if (window.getComputedStyle(info).display === "none") {
-        info.style.display = "flex"; // Mostra a div se estiver oculta
+        info.style.display = "flex";
     } else {
-        info.style.display = "none"; // Esconde a div se estiver visível
+        info.style.display = "none";
     }
 });
 let quadro2 = document.getElementById('quadro2');
@@ -114,7 +119,7 @@ let info2 = document.getElementById('info2');
 quadro2.addEventListener('click', (event) => {
     event.preventDefault();
     if (window.getComputedStyle(info2).display === "none") {
-        info2.style.display = "flex"; // Mostra a div se estiver oculta
+        info2.style.display = "flex";
     } else {
         info2.style.display = "none"; // Esconde a div se estiver visível
     }
@@ -126,17 +131,33 @@ let campo = document.getElementById('campo')
 botao.addEventListener('click', (event) => {
     event.preventDefault();
     let leftValue = campo.style.left;
-    if (leftValue === "-50%" || leftValue === "") {
-        campo.style.left = "4%";
+    if (leftValue === "-150%" || leftValue === "") {
+        campo.style.left = "1%";
         botao.innerText = "Menos -";
         botao.style.backgroundColor ="#a56710"
     } else {
-        campo.style.left = "-50%";
+        campo.style.left = "-150%";
         botao.innerText = "Mais +";
         botao.style.backgroundColor ="#a37534"
     }
 });
 
+let botao2 = document.getElementById('botao2')
+let campo2 = document.getElementById('campo2')
+
+botao2.addEventListener('click', (event) => {
+    event.preventDefault();
+    let leftValue = campo2.style.left;
+    if (leftValue === "-150%" || leftValue === "") {
+        campo2.style.left = "4%";
+        botao2.innerText = "Menos -";
+        botao2.style.backgroundColor ="#a56710"
+    } else {
+        campo2.style.left = "-150%";
+        botao2.innerText = "Mais +";
+        botao2.style.backgroundColor ="#a37534"
+    }
+});
 
 let list = document.querySelectorAll('.item')
 let next = document.getElementById('next')
