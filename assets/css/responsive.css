@@ -36,6 +36,14 @@
     .fundo{
         height: auto;
     }
+    .library{
+        background-image: url("../img/back-livro\ \(1\).jpg")
+    }
+    .library .container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 90%;
+    }
     .names{
         flex-direction: column;
         padding: 30px;

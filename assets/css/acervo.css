@@ -1,0 +1,31 @@
+.livro-back{
+    background-color: white;
+}
+.livro-back .hero{
+    background-color: #db9942;
+}
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30vh;
+}
+.hero h1{
+    font-size: 50px;
+    color: white;
+}
+.hero p{
+    font-family: "MedievalSharp";
+    color: white;
+    font-size: 30px;
+}
+.hero .fixo{
+}
+.hero .livro{
+    position: absolute;
+    width: 250px;
+    left: 42%;
+    right: 50%;
+    top: 48%;
+}
