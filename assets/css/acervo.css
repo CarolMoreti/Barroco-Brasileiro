@@ -20,12 +20,61 @@
     color: white;
     font-size: 30px;
 }
-.hero .fixo{
-}
+
 .hero .livro{
     position: absolute;
     width: 250px;
     left: 42%;
     right: 50%;
-    top: 48%;
+    bottom: 180px;
+}
+.livro-back .voltar{
+    color: black;
+}
+.books{
+    margin-top: 30vh;
+}
+.livro-back .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+.livro-back .row .left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50%;
+    gap: 45%;
+    margin-left: 100px;
+}
+.livro-back .row .left h2{
+    width: 100px;
+}
+.livro-back .row .right {
+    display: none;
+    position: absolute;
+    right: -550px; /* Inicialmente fora da tela */
+    width: auto;
+    height: auto;
+    background-color: #db9942;
+    transition: right 0.3s ease; /* Para uma transição suave */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+    padding: 50px;
+    border-radius: 20px;
+}
+.row .right a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.row .right a:hover{
+    color:rgb(247, 232, 212)
 }

@@ -12,14 +12,82 @@
 <body class="livro-back">
     <a href="info.html" class="voltar">Voltar</a>
     <section class="hero">
-        <div class="fixo">
-            <img src="./assets/img/livro-removebg-preview.png" alt="">
-        </div>
+        <img src="./assets/img/livro-removebg-preview.png" alt="" class="livro">
         <div class="container">
             <h1>Acervo de Obras</h1>
             <p>e análises</p>
         </div>
     </section>
-    
+    <section class="books">
+        <div class="container">
+            <div class="row">
+                <div class="left">
+                    <h2>Gregório de <br>Matos</h2>
+                    <img src="./assets/img/greg.png" alt="" class="row-img">
+                </div>
+                <div class="right">
+                    <h1>Análise Poetica</h1>
+                    <a href="">Clique Aqui</a>
+                    <h1>Obras</h1>
+                    <a href="#obras">Clique Aqui</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <h2>Padre Antônio de<br>Oliveira</h2>
+                    <img src="./assets/img/pe.png" alt="" class="row-img">
+                </div>
+                <div class="right">
+                    <h1>Análise da Estrutura</h1>
+                    <a href="">Clique Aqui</a>
+                    <h1>Obras</h1>
+                    <a href="#obras">Clique Aqui</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <h2>Bento<br>Teixeira</h2>
+                    <img src="./assets/img/bento.png" alt="" class="row-img">
+                </div>
+                <div class="right">
+                    <h1>Análise Poetica</h1>
+                    <a href="">Clique Aqui</a>
+                    <h1>Obras</h1>
+                    <a href="#obras">Clique Aqui</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <h2>Manuel<br>Botelho</h2>
+                    <img src="./assets/img/botelho.png" alt="" class="row-img">
+                </div>
+                <div class="right">
+                    <h1>Análise Poetica</h1>
+                    <a href="">Clique Aqui</a>
+                    <h1>Obras</h1>
+                    <a href="#obras">Clique Aqui</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+<script>
+    const rowImgs = document.querySelectorAll('.row');
+        const rightDivs = document.querySelectorAll('.right');
+
+        // Para cada imagem, adicionar o evento de mouseover e mouseout
+        rowImgs.forEach((row, index) => {
+            const rightDiv = rightDivs[index];
+
+            row.addEventListener('mouseover', () => {
+                rightDiv.style.visibility = 'visible';
+                rightDiv.style.right = '0';
+            });
+
+            row.addEventListener('mouseout', () => {
+                rightDiv.style.visibility = 'hidden';
+                rightDiv.style.right = '-550px';
+            });
+        });
+  </script>
 </html>
