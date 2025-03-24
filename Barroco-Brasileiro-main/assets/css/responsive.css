@@ -1,0 +1,162 @@
+@media (width<900px){
+    .scroll .hero{
+        background-image: url("./responsive.png");
+    }
+    .hero .p{
+        color:#000 ;
+    }
+    .resumo .container{
+        padding: 30px;
+    }
+    .resumo .right{
+        display: none;
+    }
+    .resumo p{
+        width: 100%;
+    }
+    .bottom-div{
+        gap: 0;
+    }
+    .voltar{
+        margin-left: 0;
+        left: 43%;
+        font-size: 30px;
+    }
+    .scroll #prev, .scroll #next{
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+        position: fixed;
+    }
+    .autores{
+        background-image: url(./papel.jpg);
+        background-size: 450px;
+        height: auto;
+    }
+    .fundo{
+        height: auto;
+    }
+    .library{
+        background-image: url("../img/back-livro\ \(1\).jpg")
+    }
+    .livro-back .hero{
+        background-color: #db9942;
+    }
+    .library .container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 90%;
+    }
+    .livro-back .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .livro-back .hero .livro{
+        left: 25%;
+        right: 75%;
+        bottom: 120px;
+    }
+    .names{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .direita, .esquerda{
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .antonio{
+        margin-left: 0;
+    }
+    .moldura{
+        display: flex;
+    }
+    .scroll{
+        overflow-x: scroll;
+        height: auto;
+    }
+    .names a{
+        text-align: center;
+    }
+    .names a p{
+        background-color: #B86152;
+        border: none;
+        border-radius: 20px;
+    }
+    .names a:hover{
+        opacity: 1;
+    }
+
+    .quadro-foto{
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    .item .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .quadro a{
+        pointer-events: none;
+    }
+    .infor{
+        display: flex;
+        margin: 10px;
+        width: 250px;
+        background-color: #FDE3BE;
+        border-radius: 30px;
+        border: 2px solid transparent;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+    .infor .container{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+    }
+    .infor p{
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    .infor li{
+        font-size: 17px;
+    }.histo p{
+        font-weight: normal;
+        font-size: 17px;
+    }.histo h1{
+        font-size: 25px;
+        font-family: "Jacquard 24", sans-serif;
+        font-weight: 300;
+    }
+
+    .top-div{
+        flex-direction: column;
+    }
+    .right-top{
+        width: 100%;
+    }
+    .right-top h1{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .autor .container{
+        margin: 50px 40px;
+    }
+    .campo {
+        max-width: 100%;
+        width: 650px;
+        height: auto;
+    }
+    .campo .seta #prev, .campo .seta #next{
+        width: 40px;
+        height: 40px;
+    }
+    .last{
+        display: none;
+    }
+    .item .mob{
+        display: flex;
+    }
+}
