@@ -1,6 +1,7 @@
 .livro-back{
     background-color: white;
     overflow-x: hidden;
+    width: 100vw;
 }
 .livro-back .hero{
     background-color: #db9942;
@@ -26,7 +27,7 @@
     position: relative;
     font-family: "Jacquard 24", serif;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: black;
     font-size: 60px;
     margin-left: 35%;
 }
@@ -168,7 +169,7 @@
 }
 .card-carc ul li{
     font-size: 19px;
-    color: rgb(167, 122, 25);
+    color: rgb(167, 122, 25); 
 }
 .livro-back .line{
     width: 100%;
@@ -178,4 +179,137 @@
 }
 .livro-back .line:last-child{
     margin-bottom: 50px;
+}
+.analise .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px 50px;
+    gap: 50px;
+}
+.analise .container .autor-analise{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.analise ul{
+    list-style-type: none;
+}
+.analise .container .autor-analise .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.analise .container .autor-analise .title .title-t{
+    font-family: 'Jacquard 24', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.analise .container .autor-analise .poema{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px 20px;
+    border: 1px solid #d9d9d9c4;
+    border-radius: 10px;
+    border-bottom: 3px solid #d9d9d9;
+    width: 50%;
+    gap: 15px;
+}
+.analise .container .autor-analise .poema h2{
+    margin-bottom: 15px;
+}
+.analise .container .autor-analise .poema li{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 20px;
+    color: #7f7f7f;
+    font-family:'MedievalSharp';
+}
+.books-mob{
+    display: none;
+}
+footer{
+    font-size: 10px;
+    text-align: end;
+    padding: 5px;
+    color: rgb(156, 156, 156);
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+@media(width<900px){
+    .livro-back .hero{
+        padding: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .livro-back .books{
+        display: none;
+    }
+    .livro-back .books-mob{
+        display: flex;
+        margin: 50px 30px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .livro-back .books-mob .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+    .livro-back .books-mob a{
+        text-decoration: none;
+        color: #8a7862;
+        background-color: wheat;
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 23px;
+    }
+    .testemonials{
+        padding: 20px;
+    }
+    .testemonials .quote{
+        font-weight: bold;
+        font-size: 2.5rem;
+        line-height: 5rem;
+        padding: 0 2rem 6rem;
+        text-align: center;
+    }
+    .testemonials .icons{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .testemonials img{
+        width: 100px;
+        height: 120px;
+    }
+    .carac-analise .back{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        font-size: 50px;
+        color: black;
+    }
+    .carac-analise .carac-cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .carac-analise .container{
+        margin: 10px 20px 30px 20px;
+    }
+    .analise .container .autor-analise .poema{
+        width: auto;
+    }
 }
